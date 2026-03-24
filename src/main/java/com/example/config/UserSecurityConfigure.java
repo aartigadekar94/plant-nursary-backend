@@ -54,6 +54,7 @@ public class UserSecurityConfigure {
 	        .authorizeHttpRequests(auth -> auth
 	            .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()  // ⭐ allow preflight
 	            .requestMatchers("/api/auth/**").permitAll()
+	            .requestMatchers("/login", "/logout").permitAll()
 	            .requestMatchers("/api/products").permitAll()
 	            .requestMatchers("/api/customer/**").authenticated()
 	            .requestMatchers("/orders/**").authenticated()
