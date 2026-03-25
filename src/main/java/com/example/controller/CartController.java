@@ -26,7 +26,7 @@ import com.example.service.CartService;
 
 @RestController
 @RequestMapping("/cart")
-@CrossOrigin(origins = "*")
+
 public class CartController {
 	@Autowired
 	private CartService service;

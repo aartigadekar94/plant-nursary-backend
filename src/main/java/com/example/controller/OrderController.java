@@ -23,7 +23,7 @@ import com.example.service.OrderSevice;
 
 @RestController
 @RequestMapping("/orders")
-@CrossOrigin(origins = "*")
+
 public class OrderController {
 
     private final OrderSevice orderService;

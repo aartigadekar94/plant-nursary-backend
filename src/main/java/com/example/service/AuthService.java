@@ -40,7 +40,7 @@ public class AuthService {
     // SIGNUP
     // =========================
     public CustomerResponseDTO register(SignUpRequestDTO dto) {
-
+    
         // Create User
         User user = new User();
         user.setEmail(dto.getEmail());
